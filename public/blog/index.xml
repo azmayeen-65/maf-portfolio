@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Article on Azmayeen Fayekh</title>
+    <link>https://maf65.com/blog/</link>
+    <description>Recent content in Article on Azmayeen Fayekh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Sep 2020 12:49:27 +0600</lastBuildDate><atom:link href="https://maf65.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Artificial Intelligence - The Next Frontier of Innovation</title>
+      <link>https://maf65.com/blog/artificial-intelligence-the-next-frontier-of-innovation/</link>
+      <pubDate>Wed, 16 Sep 2020 12:49:27 +0600</pubDate>
+      
+      <guid>https://maf65.com/blog/artificial-intelligence-the-next-frontier-of-innovation/</guid>
+      <description>Artificial Intelligence, or AI, is like the Terminator&amp;rsquo;s cousin who decided to go to college and pursue a career in computer science instead of chasing humans.</description>
+    </item>
+    
+    <item>
+      <title>Blender: The Open-Source Revolution in 3D</title>
+      <link>https://maf65.com/blog/blender-the-open-source-revolution-in-3d/</link>
+      <pubDate>Sun, 12 Jul 2020 12:49:27 +0600</pubDate>
+      
+      <guid>https://maf65.com/blog/blender-the-open-source-revolution-in-3d/</guid>
+      <description>Blender, the free and open-source 3D modeling software, has a story that&amp;rsquo;s almost as wild as the animations and designs it helps create.</description>
+    </item>
+    
+  </channel>
+</rss>

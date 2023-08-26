@@ -1,0 +1,41 @@
+# Vcard configuration file
+##
+### param "bgimage" - Background Image or Background Photo
+### param "photo" - Small circle photo
+### param "name" - Your Name
+### param "typed" - Typed text under Name
+### param "social" - Social Links, icon class name you can find here https://fontawesome.com/icons?d=gallery&s=brands&m=free
+### param "buttons" - Buttons, icon class you can find here https://ionicons.com/v4/
+
+main:
+  bgimage: "images/coverpic-maf.jpg"
+  photo: ""
+  name: "Md. Azmayeen Fayekh"
+  typed:
+    - text: "Web Developer"
+    - text: "Programmer"
+    - text: "Tech Enthusiast "
+    - text: "Video Editor"
+  social:
+    - title: "Facebook"
+      icon: "fab fa-facebook"
+      url: "https://www.facebook.com/azmayeen.fayekh"
+    - title: "Instagram"
+      icon: "fab fa-instagram"
+      url: "https://www.instagram.com/axmayeen/"
+    - title: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/Fayekh"
+    # - title: "Spotify"
+    #   icon: "fab fa-spotify"
+    #   url: "https://www.spotify.com/"
+    # - title: "Stackoverflow"
+    #   icon: "fab fa-stack-overflow"
+    #   url: "https://stackoverflow.com/"
+  buttons:
+    - title: "CV"
+      icon: "ion-ios-cloud-download"
+      url: "/images/maf_cv.png"
+    - title: "Contact Me"
+      icon: "ion-paper-airplane"
+      url: "mailto:fayekh7565@gmail.com"

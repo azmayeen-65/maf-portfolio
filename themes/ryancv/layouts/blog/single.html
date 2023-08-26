@@ -1,0 +1,90 @@
+{{ define "main" }}
+{{ $dateFormat := .Site.Params.dateFormat }}
+
+{{ "" | safeHTML }}
+<div class="card-inner blog blog-post animated" id="blog-card">
+	<div class="card-wrap">
+
+		<div class="content blog-single">
+
+			<div class="title">{{"My Articles"}}</div> <!-- i18n "blogPost" -->
+
+			<div class="row border-line-v">
+				<div class="col col-m-12 col-t-12 col-d-12">
+					<div class="post-box">
+
+						<h1>{{ .Title }}</h1>
+						<div class="blog-detail">
+							<!-- <span class="date">{{ .PublishDate.Format $dateFormat }}</span> -->
+							{{ if .Params.categories }}
+							<span class="cat-links">
+								{{ range (.GetTerms "categories") }}
+								<a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+								{{ end }}
+							</span>
+							{{ end }}
+						</div>
+						{{ with .Params.fullImage }}
+						<div class="blog-image">
+							<img src="{{ . | absURL }}" alt="{{ .Title }}" />
+						</div>
+						{{ else }}
+						<div class="blog-image">
+							<img src="{{ .Params.featureImage | absURL }}" alt="{{ .Title }}" />
+						</div>
+						{{ end }}
+
+						<div class="blog-content">
+							{{ .Content }}
+						</div>
+
+						<div class="post-text-bottom">
+							<div class="social-share" data-title="{{ .Title }}" data-url="{{ .Permalink | absURL }}">
+								<span>{{ i18n "share" }}:</span>
+								<a class="share-btn share-btn-facebook share-btn-1" title="{{ i18n " shareOn" }}
+									Facebook">
+									<i class="ion ion-social-facebook"></i>
+								</a>
+								<a class="share-btn share-btn-twitter share-btn-2" title="{{ i18n " shareOn" }}
+									Twitter">
+									<i class="ion ion-social-twitter"></i>
+								</a>
+								<a class="share-btn share-btn-linkedin share-btn-3" title="{{ i18n " shareOn" }}
+									Linkedin">
+									<i class="ion ion-social-linkedin"></i>
+								</a>
+								<a class="share-btn share-btn-reddit share-btn-4" title="{{ i18n " shareOn" }} Reddit">
+									<i class="ion ion-social-reddit"></i>
+								</a>
+								<a class="share-btn share-btn-pinterest share-btn-5" title="{{ i18n " shareOn" }}
+									Pinterest">
+									<i class="ion ion-social-pinterest"></i>
+								</a>
+							</div>
+						</div>
+						<!-- {{ if or .NextInSection .PrevInSection }}
+						<div class="post-navigation" role="navigation">
+							{{ if .PrevInSection }}
+							<div class="nav-previous">
+								<a href="{{ .PrevInSection.Permalink }}" rel="prev" title="{{ .PrevInSection.Title }}">
+									<span class="post-nav-next post-nav-text">{{ i18n "prev" }}</span>
+								</a>
+							</div>
+							{{ end }}
+							{{ if .NextInSection }}
+							<div class="nav-next">
+								<a href="{{ .NextInSection.Permalink }}" rel="next" title="{{ .NextInSection.Title }}">
+									<span class="post-nav-prev post-nav-text">{{ i18n "next" }}</span>
+								</a>
+							</div>
+							{{ end }}
+						</div>
+						{{ end }} -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{{ end }}
